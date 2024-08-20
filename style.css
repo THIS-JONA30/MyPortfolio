@@ -1,0 +1,775 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Peta:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Lexend+Peta:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Lexend+Peta:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Share+Tech+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Jersey+10&family=Lexend+Peta:wght@100..900&family=Overpass+Mono:wght@300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Share+Tech+Mono&display=swap');
+*{
+    box-sizing:border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    background: black;
+}
+
+.container-socials{
+    height: 100vh;
+    width: 10%;
+    /* background: rgb(10, 45, 220); */
+    /* background: black; */
+    position: fixed;
+    top:0;
+    left:0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
+
+.social-logos{
+    /* background: black; */
+
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px;
+    padding: 10px 0px;
+}
+
+.social-logos i{
+    color: #FFF;
+
+    font-size: x-large;
+    text-align: center;
+    margin: 0px 10px;
+    padding: 10px;
+}
+
+.social-logos i:hover{
+    color: rgb(64, 165, 221);
+    transform: scale(1.1);
+
+    /* border: 2px solid rgb(64, 165, 221); */
+    box-shadow: 0 4px 8px rgb(64, 165, 221);
+}
+
+.navbar{
+    /* background: lightyellow; */
+    display: flex;
+    justify-content: center;
+    
+    margin-left: 10%;
+    width: auto;
+    height: 15%;
+    flex: 1;
+}
+
+.nav{
+    /* background: lightgreen; */
+    /* background: black; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items: center;
+
+    padding: 15px 15px;
+}
+
+.navbar .nav a{
+    text-decoration: none;
+    font-size: larger;
+    font-family: 'Lexend Peta';
+    /* color:  black; */
+    color: #FFF;
+
+}
+
+.nav a:hover{
+    color: rgb(64, 165, 221); /* Main text color */
+  font-size: 24px;
+  /*    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5), -3px -3px 5px rgb(64, 165, 221); */
+}
+
+.navbar .nav li{
+    list-style-type: none;
+}
+
+.logo {
+    width: 75px;
+    height: 75px;
+    transition: transform 0.6s ease;
+    animation: spin 60s linear infinite;
+    animation-play-state:running; /* Start paused */
+  }
+  .logo:hover {
+     animation-play-state: paused;
+    /* animation: spin 10s linear infinite; Resume animation on hover */
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .container-intro img{
+    height: 260px;
+    border-radius: 40px 20px;
+  }
+
+  .container-welcome{
+    height: 35rem;
+    width: auto;
+    /* margin-top: %; */
+    margin-left: 10%;
+    /* background: lightcoral; */
+    
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .border-container{
+    width: 100%;
+    /* background-color: aqua; */
+    margin: 0px 30px;
+    /* padding-top: 30px; */
+    /* padding: 20px 20px; */
+    border: 4px solid white;
+    border-radius: 40px 20px;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container-buttons{
+    padding: 10px 10px;
+    /* background-color: tomato; */
+    /* border: 3px solid black; */
+    /* border-radius: 0px 0px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .border-container .container-buttons hr{
+    background-color: #FFF;
+    width: auto;
+    height: 2px;
+  }
+  .container-buttons .buttons li{
+    margin-left: 10px;
+    color: #FFF;
+    text-decoration: dotted;
+    font-size: x-large; 
+  }
+
+  .container-buttons .buttons .green{
+    color: green;
+  }
+  .container-buttons .buttons .blue{
+    color: blue;
+  }
+  .container-buttons .buttons .red{
+    color: red;
+  }
+
+  .container-buttons .buttons{
+    /* background: lightcyan; */
+
+    display: flex;
+    justify-content: space-evenly;
+    width: 10%;
+  }
+
+  .container-buttons .container-buttons-contact{
+    color: #FFF;
+    font-size: large;
+    font-family: 'Share Tech Mono';
+  }
+
+
+  .container-intro{
+    height: 100%;
+    width: auto;
+
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 20px 20px;
+    
+  }
+
+  .container-intro .intro-left{
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+  }
+
+  
+
+  .container-intro .intro-left .heyworld{
+    color: rgb(64, 165, 221);
+    font-family: 'Jersey 10';
+    font-size: 6rem;
+    text-shadow: 2px 5px 0px rgba(255, 255, 255, 0.5);
+  }
+
+  .container-intro .intro-left .nightfury{
+    color: #FFF;
+    font-size: 2.4rem;
+    font-family: 'Share Tech Mono';
+    font-weight: bolder;
+  }
+
+  .container-intro .intro-left .typing-text-container{
+    color: #FFF;
+    font-size: 1.4rem;
+    font-family: 'Share Tech Mono';
+  }
+
+  .cursor {
+    display: inline-block;
+    margin-left: 2px;
+    font-weight: bold;
+    animation: blink 0.7s infinite;
+  }
+  
+  @keyframes blink {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+
+
+.container-aboutme{
+  margin-left: 10%;
+  /* padding-left: 500px; */
+  height: 40rem;
+  /* background: lightblue; */
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+}
+
+.header-aboutme-me{
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+
+  font-size: xx-large;
+  font-family: 'Share Tech Mono';
+  color: rgb(64, 165, 221);
+  margin-top: 50px;
+  margin-bottom: 25px;
+  padding: 10px 20px;
+}
+.aboutme-left img{
+  height:450px;
+  margin: 10px 10px;
+  padding: 30px 20px;
+}
+
+.container-aboutme-sectionelse{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: start;
+}
+.aboutme-right .aboutme-text{
+  margin: 10px 10px;
+  padding: 20px 20px;
+  max-height: 500px;
+  min-height: 450px;
+  max-width: 400px;
+
+  line-height: 1.2;
+  color: #FFF;
+  font-size: 1.14rem;
+  font-weight: 600;
+  font-family: 'Overpass Mono';
+  
+}
+
+.container-skills{
+  margin-left: 10%;
+  height: 40rem;
+  /* background: lightsteelblue; */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.skillset-languages img, .skillset-webdev img, .skillset-misc img{
+  height: 25px;
+}
+
+.header-skillset{
+  width: 80%;
+  font-family: 'Share Tech Mono';
+  color: rgb(64, 165, 221);
+  /* background: black; */
+  margin-top: 50px;
+  margin-bottom: 25px;
+  padding: 10px 20px;
+}
+
+.container-skillset{
+  width: 90%;
+  height: 100%;
+  /* background: lightcoral; */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.skillset-languages, .skillset-webdev, .skillset-misc{
+  color: #FFF;
+  width: 80%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.skillset-languages .header-proglang, .header-webdev, .header-misc{
+  font-size: 1.8rem;
+  font-weight: 800;
+  font-family: 'Share Tech Mono';
+  padding: 30px 10px;
+  margin: 10px 10px;
+}
+
+.container-proglang, .container-webdev, .container-misc{
+  /* background: lightblue; */
+  width: 80%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.container-skillset .lang{
+  background: light;
+  text-align: center;
+  width:fit-content;
+  border: 3px solid black;
+  border-radius: 10px;
+  padding: 5px 20px;
+  background: rgb(2, 48, 71);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container-skillset .lang:hover{
+  background-color: rgb(14, 100, 142);
+}
+.container-skillset .lang-title{
+  color: #FFF;
+  /* background: black; */
+  width: 100%;
+  height: 90%;
+  font-size: 1.1rem;
+  font-weight: 700;
+  font-family: 'Share Tech Mono';
+  text-align: center;
+  padding: 9px 5px;
+}
+
+.container-proj-intern{
+  margin-left: 10%;
+  height: 60rem;
+  /* background-color: lightpink; */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-proj-intern .header-proj-intern{
+  width: 80%;
+  height: 10%;
+  /* background: black; */
+  font-family: 'Share Tech Mono';
+  color: rgb(64, 165, 221);
+  font-size: xx-large;
+  font-weight: bold;
+  margin-top: 50px;
+  margin-bottom: 25px;
+  padding: 10px 20px;
+}
+
+.container-proj-intern .container-projects{
+
+  width: 90%;
+  height: 20rem;
+  color: #FFF;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  line-height: 1.5;
+}
+
+.container-proj-intern .container-internship{
+  width: 90%;
+  height: 20rem;
+  color: #FFF;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  line-height: 1.5;
+
+  padding: 20px 0px;
+  margin-top: 20px;
+}
+.container-projects .header-main-projects, .header-main-internship{
+  font-size: 1.8rem;
+  font-weight: 800;
+  font-family: 'Share Tech Mono';
+  padding: 20px 20px;
+}
+
+.container-allprojects, .container-allinternship{
+  width: 100%;
+  height: 90%;
+  height: fit-content;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: start;
+}
+
+.container-allprojects .project, .internship{
+  width: max-content;
+  height: min-content;
+  border: 2px solid white;
+  border-radius: 20px 10px;
+  padding: 10px 10px;
+  max-width: 20rem;
+  min-height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+
+}
+
+.container-allprojects .project:hover{
+  box-shadow: rgba(64, 165, 221) 0px 30px 60px -12px inset, rgba(64, 165, 221) 0px 18px 36px -18px inset;
+  background-color: rgb(2, 67, 99);
+}
+
+.container-allinternship .internship:hover{
+  box-shadow: rgba(64, 165, 221) 0px 30px 60px -12px inset, rgba(64, 165, 221) 0px 18px 36px -18px inset;
+  background-color: rgb(2, 67, 99);
+}
+
+
+.project .header-sub-project, .internship .header-sub-internship{
+  /* background-color: black; */
+  width: 100%;
+  font-size: 1.1rem;
+  font-weight: 700;
+  font-family: 'Share Tech Mono';
+  text-align: center;
+  padding: 5px 5px;
+}
+
+.project .project-disc, .internship .internship-disc{
+  font-size:16px;
+  font-family: 'Overpass Mono';
+}
+
+.container-finalwords{
+  /* background: black; */
+  color: #FFF;
+  margin-left: 10%;
+  height: 10rem;
+  letter-spacing: 5px;
+  font-size: large;
+  margin-bottom: 20px;
+  font-family: 'Share Tech Mono';
+ 
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-adapt{
+  display: none;
+}
+
+
+
+
+
+
+
+/* Width of the scrollbar */
+::-webkit-scrollbar {
+  width: 12px; /* Adjust the width to your preference */
+}
+
+/* Track (background) of the scrollbar */
+::-webkit-scrollbar-track {
+  background: #01012d; /* Background color of the scrollbar track */
+}
+
+/* Handle of the scrollbar */
+::-webkit-scrollbar-thumb {
+  background-color: #40a5dd; /* Scrollbar handle color */
+  border-radius: 6px; /* Roundness of the handle */
+  border: 3px solid #111; /* Padding around the handle */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #64c0e6; /* Lighter color on hover */
+}
+
+
+@media(max-width:1400px){
+  .container-aboutme{
+    /* background: lightgreen; */
+    height: fit-content;
+  }
+  .container-aboutme .container-aboutme-sectionelse{
+    /* background-color: lightblue; */
+    height: fit-content;
+    flex-direction: column;
+  }
+
+  .container-aboutme-sectionelse img{
+    height: 350px;
+  }
+
+  .container-skills{
+    height: fit-content;
+  }
+  
+  .container-proj-intern{
+    margin-left: 0%;
+    height: fit-content;
+  }
+  .container-proj-intern .header-proj-intern{
+    /* background: lightcoral; */
+    
+  }
+  .container-proj-intern .container-allprojects, .container-allinternship{
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    margin: 20px 20px;
+  }
+
+  .container-proj-intern .container-projects{
+    height: 49rem;
+  }
+  .container-allprojects{
+    height: 40rem;
+  }
+
+  .container-internship{
+    height: rem;
+  }
+
+  .container-finalwords{
+    margin-left: 0%;
+    height: 20rem;
+    align-items: center;
+    margin-top: 6rem;
+  }
+}
+
+
+
+
+@media(max-width:900px){
+
+  *{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+  }
+  html,body{
+    width: 100%;
+    height: 100%;
+    background: black;
+  }
+  .container-socials{
+    display: none;
+  }
+
+  .navbar{
+    display: none;
+  }
+
+
+  /* Hide the nav menu by default */
+  .nav-menu {
+    display: none;
+  }
+
+  .navbar-adapt{
+    width: 100%;
+    /* position: fixed; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+
+  }
+
+  .navbar-adapt .navbar-toggle img{
+    height: 40px;
+    /* background: rgb(64, 165, 221); */
+  }
+  /* Show the nav menu when the 'show' class is added */
+  .nav-menu.show {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 95px;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0,0,0, 0.9);
+    text-align: center;
+  }
+
+  .nav-menu li,a {
+    margin: 10px 0;
+    color: #FFF;
+    text-decoration: none;
+    font-size: large;
+    font-family: 'Lexend Peta';
+  }
+
+  .nav-menu a:hover{
+    color: rgb(64, 165, 221);
+    font-size: larger;
+  }
+
+  .container-welcome{
+    margin-left: 0%;
+    width: 100%;
+
+  }
+  .container-welcome .container-intro img{
+    display: none;
+  } 
+  .container-aboutme{
+    height: fit-content;
+    margin-left: 0%;
+    margin-right: 0%;
+
+  }
+
+  .container-aboutme .container-aboutme-sectionelse{
+
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 90%;
+  }
+
+  .container-aboutme .aboutme-left img{
+    height: 350px;
+  }
+
+  .aboutme-right .aboutme-text{
+    width: 100%;
+    
+  }
+  .container-skills{
+    height: fit-content;
+    margin-left: 0%;
+    
+  }
+
+  .skillset-languages .container-proglang, .container-webdev, .container-misc{
+
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+  }
+
+  .container-skillset .lang{
+    min-width: fit-content;
+    margin-top: 10px;
+  }
+
+  .container-skillset .header-proglang, .header-webdev, .header-misc{
+    text-align: center;
+    
+  }
+  .container-proj-intern{
+    margin-left: 0%;
+    height: fit-content;
+  }
+  .container-proj-intern .header-proj-intern{
+    /* background: lightcoral; */
+    
+  }
+  .container-proj-intern .container-allprojects, .container-allinternship{
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    margin: 20px 20px;
+  }
+
+  .container-proj-intern .container-projects{
+    height: 49rem;
+  }
+  .container-allprojects{
+    height: 40rem;
+  }
+
+  .container-internship{
+    height: rem;
+  }
+  .container-finalwords{
+    margin-left: 0%;
+    height: 20rem;
+    align-items: center;
+    margin-top: 6rem;
+  }
+}
